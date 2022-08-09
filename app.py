@@ -59,4 +59,4 @@ def logout():
 if(__name__ == '__main__'):
     app.secret_key = "ThisIsNotASecret:p"
     db.create_all()
-    app.run()
+    app.run(host='0.0.0.0',port=80)
